@@ -1,1 +1,212 @@
-*{margin:0;padding:0}body{-webkit-user-select:none;overflow: hidden;user-select:none;background:#000;color:#fff;font-family:Gill Sans,Gill Sans MT,Calibri,Trebuchet MS,sans-serif;position:relative;display:block;height:100vh}.board{width:100vw;height:500px;position:absolute;top:0;bottom:0;right:0;left:0;margin:auto;display:block}.board-row{display:flex;justify-content:center}.game-box{background:#fff;padding:30px;display:block;margin:auto;max-width:360px;border-radius:20px}.board h4{font-size:30px;text-align:center;margin:0 0 10px}.winner{height:100%;display:flex;justify-content:center;align-items:center}.won{display:flex;flex-direction:column;letter-spacing:.3px}.won button{padding:10px 30px;background:#f8f8f8;font-size:24px;font-weight:700;letter-spacing:.3px;border-radius:10px;margin-top:20px;transition:all .3s ease-in;font-family:Gill Sans,Gill Sans MT,Calibri,Trebuchet MS,sans-serif}.won button:hover{border:2px solid #f8f8f8;background:#000;color:#fff}.squear-text{color:#000;font-size:100px;font-weight:900}@media only screen and (max-width: 450px){.board{height:60vh}.board h4{font-size:26px}.game-box{max-width:270px;height:270px}.square{width:90px;height:90px!important}.squear-text{font-size:90px}}@media only screen and (max-width: 400px){.board h4{font-size:22px}.board{height:58vh}.game-box{max-width:210px;height:210px}.square{width:70px;height:70px!important}.squear-text{font-size:70px}}@media only screen and (max-width: 320px){.won{width:70%;font-size:22px;text-align:center}.won button{padding:10px;font-size:20px;margin-top:10px}.board h4{font-size:22px}.board{height:46vh}.game-box{max-width:150px;height:150px}.square{width:50px;height:50px!important}.squear-text{font-size:50px}}@media only screen and (max-width: 250px){.won{width:95%;font-size:22px;text-align:center}}
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  user-select: none;
+  background: #003459;
+  color: #adebff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.board {
+
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.game-box {
+  background: #00171f;
+
+  padding: 30px;
+  display: block;
+  margin: auto;
+  max-width: 360px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px 10px #003459;
+  /* height: 50vh; */
+}
+
+.board h4 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+
+}
+
+.winner {
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.won {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: .3px;
+}
+
+.won button {
+  padding: 10px 30px;
+  background: #00171f;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all .3s ease-in;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.won button:hover {
+  background: #adebff;
+  color: #003459;
+  font-weight: 900;
+}
+
+.squear-text {
+  color: #adebff;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .board {
+    height: 60vh;
+    border: 2px solid red;
+  }
+
+  .board h4 {
+    font-size: 26px;
+  }
+
+  .game-box {
+    max-width: 270px;
+    height: 270px;
+  }
+
+  .square {
+    width: 90px;
+    height: 90px !important;
+  }
+
+  .squear-text {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .board h4 {
+    font-size: 22px;
+  }
+
+  .board {
+    border: 2px solid blue;
+
+    height: 50vh;
+  }
+
+  .game-box {
+    max-width: 210px;
+    height: 210px;
+  }
+
+  .square {
+    width: 70px;
+    height: 70px !important;
+  }
+
+  .squear-text {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .won {
+    width: 70%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .won button {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .board h4 {
+    font-size: 22px;
+  }
+
+  .board {
+    border: 2px solid yellow;
+
+    height: 46vh;
+
+
+  }
+
+  .game-box {
+    max-width: 180px;
+    height: 180px;
+  }
+
+  .square {
+    width: 60px;
+    height: 60px !important;
+  }
+
+  .squear-text {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .won {
+    width: 95%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+}
+.board-row .square{
+  border: 2px solid #d2d1d1;
+  border-collapse: collapse;
+}
+.board-row .square:nth-child(1){
+  border-left: none;
+} 
+.board-row .square:nth-child(3){
+  border-right: none;
+}
+.board-row:nth-child(3) .square{
+  border-bottom: none;
+}
+.board-row:nth-child(1) .square{
+  border-top: none;
+} 
