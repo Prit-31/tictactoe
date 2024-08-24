@@ -195,18 +195,18 @@ body {
 
 }
 .board-row .square{
-  border: 2px solid #d2d1d1;
+  border: 2px solid #adebff !important;
   border-collapse: collapse;
 }
 .board-row .square:nth-child(1){
-  border-left: none;
+  border-left: none !important;
 } 
 .board-row .square:nth-child(3){
-  border-right: none;
+  border-right: none !important;
 }
 .board-row:nth-child(3) .square{
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .board-row:nth-child(1) .square{
-  border-top: none;
+  border-top: none !important;
 } 
